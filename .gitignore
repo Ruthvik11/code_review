@@ -1,0 +1,17 @@
+# Hide environment secrets
+.env
+
+# Python junk
+__pycache__/
+*.pyc
+*.pyo
+
+# Chroma Vector Store (local index)
+chroma_index/
+
+# Virtual environment
+env/
+venv/
+
+# Streamlit temp files
+.streamlit/
