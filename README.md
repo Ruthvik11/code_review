@@ -62,43 +62,49 @@ A witty, actionable review is returned.
 📂 Folder Structure
 ```bash
 code_review_bot/
-├── app/              # Streamlit frontend
-├── backend/          # FastAPI backend
-├── data/             # ChromaDB storage
-├── docs/             # Swagger docs
-├── scripts/          # Data loading scripts
-├── requirements.txt  # Project dependencies
-└── README.md         # This file
+├── Python/
+├── app.py
+├── main.py
+├── logic.py
+├── model.py
+├── prompt.py
+├── model_loader.py
+├── rag_loader.py
+├── rag_reviewer.py
+├── run_loader.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
-🚀 Getting Started
-Prerequisites
+## 🚀 Getting Started
 
-Python 3.9+
-Git
-An OpenAI API key
+### 🧰 Prerequisites
+- Python 3.9+
+- Git
+- OpenAI API key
 
-Installation
+### ⚙️ Installation
 
-Clone the repository:
-git clone https://github.com/your-username/code_review_bot.git
-cd code_review_bot
+```bash
+# Clone the repository
+git clone https://github.com/Ruthvik11/code_review.git
+cd code_review
 
+# (Optional) Create and activate virtual environment
+python -m venv env
+env\Scripts\activate        # For Windows
+source env/bin/activate     # For Mac/Linux
 
-Install dependencies:
+# Install dependencies
 pip install -r requirements.txt
 
+# Set your OpenAI API key
+echo OPENAI_API_KEY=your-api-key-here > .env
 
-Set up your OpenAI API key:
-export OPENAI_API_KEY='your-api-key-here'
-
-
-Run the backend:
-cd backend
+# Run the backend
 uvicorn main:app --reload
 
-
-Run the frontend:
-cd app
+# Run the frontend
 streamlit run app.py
 
 
