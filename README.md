@@ -60,15 +60,16 @@ GPT-3.5 processes the user’s code, similar code context, and a sarcastic promp
 A witty, actionable review is returned.
 
 📂 Folder Structure
+```bash
 code_review_bot/
-├── app/                # Streamlit frontend
-├── backend/            # FastAPI backend
-├── data/               # ChromaDB storage
-├── docs/               # Swagger docs
-├── scripts/            # Data loading scripts
-├── requirements.txt    # Project dependencies
-└── README.md           # This file
-
+├── app/              # Streamlit frontend
+├── backend/          # FastAPI backend
+├── data/             # ChromaDB storage
+├── docs/             # Swagger docs
+├── scripts/          # Data loading scripts
+├── requirements.txt  # Project dependencies
+└── README.md         # This file
+```
 🚀 Getting Started
 Prerequisites
 
