@@ -90,6 +90,7 @@ code_review_bot/
 git clone https://github.com/Ruthvik11/code_review.git
 cd code_review
 
+
 # (Optional) Create and activate virtual environment
 python -m venv env
 env\Scripts\activate        # For Windows
@@ -105,7 +106,7 @@ echo OPENAI_API_KEY=your-api-key-here > .env
 uvicorn main:app --reload
 
 # Run the frontend
-streamlit run app.py
+streamlit run app.py```
 
 
 
