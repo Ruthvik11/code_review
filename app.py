@@ -184,7 +184,7 @@ if st.button("🔬 Initiate Code Scan"):
     else:
         with st.spinner("🔄 Analyzing code..."):
             try:
-                response = requests.post("http://127.0.0.1:8000/review_code", json={"code": code})
+                response = requests.post("https://code-review-4qre.onrender.com", json={"code": code})
                 if response.status_code == 200:
                     data = response.json()
                     
